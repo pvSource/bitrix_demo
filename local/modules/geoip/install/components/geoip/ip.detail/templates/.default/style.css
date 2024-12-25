@@ -1,0 +1,76 @@
+.ip-detail * {
+    box-sizing: border-box;
+}
+
+.ip-detail__container {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.ip-detail__form-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ip-detail__input-box {
+    margin-right: 10px;
+    width: calc(100% - 150px);
+}
+
+.ip-detail__input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    color: #3c3c3c;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border: unset;
+}
+
+.ip-detail__form-box button {
+
+    width: 140px;
+
+    background-color: #f7f5ec;
+    border: unset;
+    height: 32px;
+    color: black;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+}
+
+.ip-detail__container {
+    background-color: rgb(255, 255, 255);
+    transition: background-color .3s ease;
+}
+
+.ip-detail__container:has(.ip-detail__info_incorrect) {
+    background-color: rgb(255, 202, 192);
+}
+
+.ip-detail__container:has(.ip-detail__info_correct) {
+    background-color: rgb(183, 255, 198);
+}
+
+.ip-detail__title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.ip-detail__value {
+    text-decoration: underline;
+}
+
+.ip-detail__error-message {
+    font-weight: bold;
+}
